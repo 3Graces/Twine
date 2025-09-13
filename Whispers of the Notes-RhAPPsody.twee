@@ -1,0 +1,1453 @@
+:: StoryTitle
+Storyboard-museo musica
+
+
+:: StoryData
+{
+  "ifid": "0810F8D0-FB1D-4237-B117-3CC265706B89",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": " Start",
+  "zoom": 0.6
+}
+
+
+:: \ Audio_1 {"position":"1625,1225","size":"100,100"}
+
+<center>
+    <audio src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/theharp.mp3" controls>
+        Il tuo browser non supporta l'elemento audio.
+    </audio>
+</center>
+
+<p>
+    "As soon as you're ready, you can return to your investigation."
+</p>
+
+[[Get back to audioguide-> Audioguide]]
+[[Continue your journey ->Choice]]
+
+
+:: \ Audio_2 {"position":"1875,1225","size":"100,100"}
+<center>
+    <audio src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/museum%20history.mp3" controls>
+        Il tuo browser non supporta l'elemento audio.
+    </audio>
+</center>
+
+<p>
+    As soon as you're ready, you can return to your investigation.
+</p>
+
+[[Get back to audioguide-> Audioguide]]
+[[Continue your journey ->Choice]]
+
+
+:: \ Audioguide {"position":"1775,1050","size":"100,100"}
+<p>
+    The investigation can wait for a moment. Sometimes, to understand history, it's necessary to simply listen to it. 
+    The audioguide offers you a chance to completely immerse yourself in the sounds and stories of the past, enjoying the beauty of this place without the pressure of the mission.
+</p>
+
+<p>Which audio do you want to start?</p>
+
+<div style="text-align:center;">
+
+ 
+  <div style="display:inline-block; width:220px; margin:20px;">
+      <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/harp.jpg"
+     alt="Harp"
+     style="width:200px; height:auto; margin-bottom:10px;">
+      <b>[[1. Start the first audio -> Audio_1]]</b><br>
+      The harp
+  </div>
+
+
+  <div style="display:inline-block; width:220px; margin:20px;">
+      <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/history.jpg"alt="Museum"style="width:200px; height:auto; margin-bottom:10px;">
+      <b>[[2. Start the second audio -> Audio_2]]</b><br>
+      The history of the museum
+  </div>
+
+</div>
+
+[[Return to investigation menu ->Choice]]
+
+
+:: \ Detective BadgeHarp {"position":"1825,500","size":"100,100"}
+Congratulations! With the completion of this first test, you have officially obtained your detective badge.
+
+Type your name:
+(input-box: bind $name)
+
+(link: "OK")[
+    (replace: "#conferma")[Thank you, $name!]
+]
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/badge_harp.png" style="width:450px;">
+</p>
+
+<p align="center">Now you can choose your next move, detective.</p>
+
+<span id="conferma"></span>
+
+[[I'd like to read more about the Harp -> Info Harp]]
+[[Continue the mission ->Choice]]
+
+
+
+:: \ Detective BadgeMandolin {"position":"2050,500","size":"100,100"}
+Congratulations! With the completion of this first test, you have officially obtained your detective badge.
+
+Type your name:
+(input-box: bind $name)
+
+(link: "OK")[
+    (replace: "#conferma")[Thank you, $name!]
+]
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/badge_mandolin.png" style="width:450px;">
+</p>
+
+<p align="center">Now you can choose your next move, detective.</p>
+
+<span id="conferma"></span>
+
+[[I'd like to read more about the Mandolin -> Info Mandolin]]
+[[Continue the mission ->Choice]]
+
+
+
+:: \ Detective BadgeTambourine {"position":"1450,500","size":"100,100"}
+Congratulations! With the completion of this first test, you have officially obtained your detective badge.
+
+Type your name:
+(input-box: bind $name)
+
+(link: "OK")[
+    (replace: "#conferma")[Thank you, $name!]
+]
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bdge_tambourine.png" style="width:450px;">
+</p>
+
+<p align="center">Now you can choose your next move, detective.</p>
+
+<span id="conferma"></span>
+
+[[I'd like to read more about the Tambourine -> Info Tambourine]]
+[[Continue the mission ->Choice]]
+
+
+
+:: \ Detective BadgeViolin {"position":"1250,875","size":"100,100"}
+Congratulations! With the completion of this first test, you have officially obtained your detective badge.
+
+Type your name:
+(input-box: bind $name)
+
+(link: "OK")[
+    (replace: "#conferma")[Thank you, $name!]
+]
+
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/badge_violin.png" style="width:450px;">
+</p>
+
+<p align="center">Now you can choose your next move, detective.</p>
+
+<span id="conferma"></span>
+
+[[I'd like to read more about the Violin -> Info Violin]]
+[[Continue the mission ->Choice]]
+
+
+
+:: \ Image1 {"position":"2650,1050","size":"100,100"}
+<p> Select the real image</p>
+
+<div style="display:flex; justify-content:space-around;">
+    [[<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/real_image.png" style="width: 450px;"/>|Fail]]
+    [[<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/AI_image.png" style="width: 450px;"/>|Success]]
+</div>
+
+
+:: \ Image3 {"position":"2475,1600","size":"100,100"}
+<p> You're almost there, select the real image for the last time.</p>
+
+<div style="display:flex; justify-content:space-around;">
+    [[<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/buccin.jpg" style="width: 450px;"/>|Success1.1]]
+    [[<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/harp_AI.png" style="width: 450px;"/>|Fail1.1]]
+</div>
+
+
+:: \ Immersive room 1 {"position":"725,350","size":"100,100"}
+<p>
+    <em>(The sound becomes tenser, with a subtle electronic interference)</em>
+    In a world where every image can be created, every sound reproduced, every story reinvented, the memory of the past has become an investigation. And your presence here is no accident. You have been chosen for a reason.
+</p>
+
+<p>
+    The projections begin to flicker and distort. The images break down into pixels, the colors change, and the authentic sounds are overwhelmed by a jarring digital noise.
+</p>
+
+[[Watch carefully ->Immersive room 2]]
+
+
+:: \ Info Harp {"position":"1675,500","size":"100,100"}
+<div style="text-align:center; margin-top:50px;">
+The harp is one of the oldest and most fascinating instruments. Since ancient Egypt and Mesopotamia, its sweet and melodious sound has accompanied ceremonies, epic tales, and moments of reflection.
+
+In the Middle Ages and the Renaissance, the harp became a symbol of nobility and grace, played in royal courts to create an atmosphere of calm and harmony. It was not only a musical instrument but also a way to narrate stories and poems, transforming rooms into places of pure magic and contemplation.
+
+[[Continue the investigation ->Choice]]</p>
+</div>
+
+
+:: \ Info Mandolin {"position":"2225,575","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+The mandolin, with its origins in the lute, became popular between the 17th and 18th centuries, especially in Italy.
+
+Its portability made it the preferred instrument for minstrels and travelers. The lively and unique sound of the mandolin is often associated with serenades and folk music, perfect for those who move freely and live for unexpected adventures.
+
+[[Continue the investigation ->Choice]]
+</div>
+
+
+
+:: \ Info Tambourine {"position":"1100,650","size":"100,100"}
+<div style="text-align:center; margin-top:50px;">
+The tambourine is a lively percussion instrument made of a wooden or plastic frame fitted with pairs of small metal jingles called zills.
+It can be played in many ways shaken to produce a bright, continuous shimmer, tapped or struck with the hand for crisp accents, or even rubbed with the thumb to create a soft, rolling sound.
+Over the centuries, the tambourine has travelled through many cultures: from ancient Mediterranean ceremonies to folk music, classical orchestras and modern pop and rock bands.
+Its light weight and sparkling tone make it ideal for adding energy and a touch of celebration to almost any kind of music.
+
+[[[[Continue the investigation->Choice]]
+</div>
+
+
+:: \ Info Violin {"position":"1025,825","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+The violin established itself as a solo and leading instrument in orchestras, requiring an audacious and charismatic performer.
+
+Its versatility and penetrating sound made it ideal for concerts and performances that demanded a great stage presence. In the Renaissance, the violin began its rise, becoming the narrative voice of classical music, perfect for those who love to stand out.
+
+[[Continue the investigation->Choice]]
+</div>
+
+
+:: \ Mission Start {"position":"725,600","size":"100,100"}
+(set: $A to 0)
+(set: $B to 0)
+(set: $C to 0)
+
+<p align="center">
+Every detective has their own method, their own melody.
+Before you delve into the labyrinth of history, we must discover your inner melody.
+
+There is no right or wrong answer, only your truth.
+
+Are you ready to discover who you are?
+</p>
+
+[[Go to the test 🔎->Question1]]
+
+
+
+:: \ Play instruments {"position":"1425,950","size":"100,100"}
+<p>
+    Every instrument has a voice, but it's waiting to be heard.  
+    It's up to you, detective, to make it resonate.
+</p>
+
+<div style="text-align:center;
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            align-items:flex-start;">
+
+    <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/lute_front.jpg"
+         alt="Lute"
+         style="max-height:300px; width:auto; height:auto !important;"/>
+
+    <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/violin.png"
+         alt="Violin"
+         style="max-height:300px; width:auto; height:auto !important;"/>
+
+    <a href="https://cloud.protopie.io/p/45f7f88aa8f337455d9c8d3c"
+       target="_blank" rel="noopener noreferrer">
+        <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/harp.jpg"
+             alt="Harp"
+             style="max-height:400px; width:auto; height:auto !important;"/>
+    </a>
+
+</div>
+
+[[Continue your journey ->Choice]]
+
+
+
+
+:: \ Question3 {"position":"600,975","size":"100,100"}
+<!-- DEBUG: A:$A B:$B C:$C -->
+
+<div style="text-align:center;">
+  When you meet new people, you...
+</div>
+
+<div style="margin-top:15px; text-align:left;">
+(link: "a) make an energetic first impression ⚡")[
+  (set: $A to $A + 1)
+  (goto: " Result")
+]
+
+(link: "b) wait and observe before opening up 👓")[
+  (set: $B to $B + 1)
+  (goto: " Result")
+]
+
+(link: "c) surprise them with something unexpected 🎭")[
+  (set: $C to $C + 1)
+  (goto: " Result")
+]
+</div>
+
+
+
+:: \ Result {"position":"600,1100","size":"100,100"}
+<div style="text-align:center; margin-top:50px;">
+<!-- DEBUG: A:$A B:$B C:$C -->
+
+(if: $A > $B and $A > $C)[
+    (goto: "Violin")
+]
+(else-if: $B > $A and $B > $C)[
+    (goto: "Harp")
+]
+(else-if: $C > $A and $C > $B)[
+    (goto: "Mandolin")
+]
+(else:)[
+    (goto: "Tambourine")
+]
+
+
+
+:: \ Sound1 {"position":"2175,1175","size":"100,100"}
+<div style="margin-top:3px; text-align:center;">
+
+  <p>Here's the first audio:</p>
+
+  <audio src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/violin.wav" controls></audio>
+
+  <p>What instrument is playing?</p>
+
+  [[The violin|Sound2]]  
+  [[The lute|Fail2]]  
+  [[The piano|Fail2]]
+
+</div>
+
+
+
+:: \ Start {"position":"400,350","size":"100,100"}
+<!-- AUDIO di sottofondo -->
+<audio id="bgAudio" loop>
+  <source src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/Under%20the%20tree%20(1).mp3" type="audio/mpeg">
+</audio>
+
+<!-- Pulsante di fallback in alto a sinistra -->
+<div id="playOverlay" style="
+     display:none;
+     position:fixed;
+     top:100px;            
+     left:50px;
+     background:#111;
+     color:#fff;
+     padding:12px 18px;
+     border-radius:8px;
+     cursor:pointer;
+     font-size:20px;
+     font-weight:bold;
+     z-index:9999;">
+  ▶ Enable sound
+</div>
+
+<script>
+(function(){
+  const audio = document.getElementById('bgAudio');
+  const overlay = document.getElementById('playOverlay');
+
+  // tenta l'autoplay
+  audio.play().catch(err=>{
+    overlay.style.display = 'block';
+    console.log('Autoplay blocked:', err);
+  });
+
+  // al click sul pulsante, riprova e nascondi
+  overlay.addEventListener('click', function(){
+    audio.play().then(()=> overlay.style.display='none').catch(e=>console.log(e));
+  }, {once:true});
+})();
+</script>
+
+<!-- Testo del passaggio con margine ridotto per avvicinarlo al pulsante -->
+<div style="margin-top:-200px;">   
+  Welcome to the International Museum and Library of Music!<br><br>
+
+  You are in one of Bologna's most fascinating places, a treasure chest of musical history preserved in the ancient halls of Palazzo Sanguinetti. This isn't just any museum: here, every score, every painting, and every instrument holds a story and a secret just waiting to be uncovered.
+
+  [[Start your journey ->Immersive room]]
+</div>
+
+
+
+
+:: \ Test1 {"position":"2675,925","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+<p>
+    Welcome to this challenge. Here, the line between reality and perfect imitation is thin.
+</p>
+<p>
+    You will be shown pairs of images. Your task is simple: **choose the real image**. Be careful. AI has become incredibly good at imitating reality. However, if you observe closely, you will notice small imperfections, strange details, or inconsistencies that betray its synthetic nature.
+</p>
+
+[[Continue-> Image1]]
+</div>
+
+
+:: \ Test2 {"position":"2175,1050","size":"100,100"}
+<div style="display:flex; align-items:flex-start;">
+
+
+  <div style="flex:1; padding-right:20px;">
+    <p>
+      The eye can deceive, but the ear hears the truth.  
+      Close your eyes and let the sound guide you, then tell me who this melody belongs to.
+    </p>
+
+    [[Start-> Sound1]]
+  </div>
+
+
+  <div>
+    <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20talking%202.png"
+         alt="Bard talking"
+         style="max-width:300px; height:auto;"/>
+  </div>
+
+</div>
+
+
+
+
+:: \ Test3 {"position":"3325,1325","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+Welcome to this trial, $name! 
+The orchestra has been broken and disharmonious. You will have to listen carefully to the sounds: some have been generated by the magic of machines, others are pure and authentic melody. Distinguish the true from the false, and the orchestra will play again.
+
+[[Begin the listening|Orchestra1]]
+</div>
+
+
+:: \ Test4 {"position":"2525,625","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+Dear detective, my notebook has opened, and it shows you three poetic riddles. To each riddle corresponds one of the rarities that surround you. Match the description to the correct object, and the token will be yours.
+
+[[Begin the Investigation|Riddle1]]
+</div>
+
+
+:: \ choice1 {"position":"2475,825","size":"100,100"}
+<div style="display:flex; align-items:flex-start; gap:20px;">
+
+  <div>
+    (if: $test1_completed and $test2_completed and $test3_completed and $test4_completed)[
+        Congratulations, $name. You have unraveled every enigma and collected all the tokens. 
+        The final doors are now open. Now you can either return to the main menu to try the other activities, 
+        or you can go to the final acts of this experience.
+
+        [[Return to the main menu 🗂️|Choice]]
+        [[Go to the final passages ✨|Final Souvenir]]
+    ](else:)[
+        $name, you've chosen to directly confront the main mission. Each enigma is a unique challenge.
+
+        Here are the four enigmas:
+
+        (if: $test1_completed is false)[
+            <b>[[1. Unmask the Deception 🕵️‍♂️-> Test1]]</b>
+        ](else:)[
+            <b>1. Unmask the Deception (Completed)</b>
+        ]
+        (if: $test2_completed is false)[
+            <b>[[2. Reveal the Instrument 🎻-> Test2]]</b>
+        ](else:)[
+            <b>2. Reveal the Instrument (Completed)</b>
+        ]
+        (if: $test3_completed is false)[
+            <b>[[3. Disassembled Orchestra 🎼-> Test3]]</b>
+        ](else:)[
+            <b>3. Disassembled Orchestra (Completed)</b>
+        ]
+        (if: $test4_completed is false)[
+            <b>[[4. Decipher the Message 🧩-> Test4]]</b>
+        ](else:)[
+            <b>4. Decipher the Message (Completed)</b>
+        ]
+
+        [[Return to main menu ->Choice]]
+    ]
+  </div>
+
+
+  <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20talking.jpg"
+       alt="Decorative image"
+       style="max-width:300px; height:auto; margin-left:20px;">
+
+</div>
+
+
+
+:: Bard introduction {"position":"575,475","size":"100,100"}
+<style>
+p {
+  margin-top: 0;
+}
+</style>
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20talking.jpg"
+     style="float:right; margin-left:20px; width:350px;">
+
+<p>Welcome, traveller. My name is Bard, and I am a cheerful minstrel who lives inside a magical table—a bright window you hold in your hand—where strings can sing and flutes can play with just a touch.</p>
+
+<em>His voice becomes more vibrant, inviting you to continue your journey.</em>
+
+<p align="center">[[Begin your adventure with Bard!->Start 0]]</p>
+
+
+:: Choice {"position":"1775,775","size":"100,100"}
+(set: $gadget_shown to false)
+<p>
+   $name, now that you have your badge, the paths of your investigation are open. Truth has many voices, and you can listen to them from three different perspectives:
+</p>
+<p>
+    <b>[[1. Choose an investigative path -> choice1]]</b>
+</p>
+<p>
+    <b>[[2. Listen to the official audioguide -> Audioguide]]</b>
+</p>
+<p>
+    <b>[[3. Try playing the instruments -> Play instruments]]</b>
+</p>
+
+
+
+
+:: Clarinet {"position":"3400,2200","size":"100,100"}
+<div style="text-align:center; margin-top:50px;">
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/clarinet_2.png"
+     style="float:right; margin-left:15px; width:250px;">
+
+The clarinet, invented around 1700 by Johann Christoph Denner, is a woodwind instrument.
+It is recognizable for its use of a single reed and its characteristic cylindrical bore,
+which contributes to its warm and versatile timbre. It possesses a wide range and great adaptability,
+making it a fundamental instrument in a wide variety of musical genres,
+from classical and symphonic music to jazz, military bands, and klezmer music.
+
+[[Continue->Reward3]]
+</div>
+
+
+:: End {"position":"3650,1375","size":"100,100"}
+<!-- contenitore esterno che centra il blocco -->
+<div style="display:flex; justify-content:center; align-items:center; min-height:100vh;">
+
+  <!-- blocco interno con il tuo layout originale -->
+  <div style="display:flex; align-items:flex-start; gap:20px; max-width:800px;">
+
+    <div style="flex:1;">
+      Dear $name, your journey here concludes. I hope the notes of the music and the museum's secrets have accompanied you well. 
+      Thank you for your visit, and see you soon!  
+
+      Before leaving the museum, please return the headphones at the drop-off point.
+    </div>
+
+    <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20talking.jpg"
+         style="width:300px; height:auto;">
+  </div>
+
+</div>
+
+
+
+:: Fail {"position":"2825,1050","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+
+Oh no, it wasn't the right image. Please try again.
+
+[[Try again-> Image1]]
+</div>
+
+
+:: Fail1 {"position":"2650,1300","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+
+Oh no, it wasn't the right image. Please try again.
+
+[[Try again->Image2]]
+</div>
+
+
+:: Fail1.1 {"position":"2650,1600","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+
+Oh no, it wasn't the right image. Please try again.
+
+[[Try again-> Image3]]
+</div>
+
+
+:: Fail2 {"position":"2350,1300","size":"100,100"}
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20fail.png"
+     style="float:left; margin-right:10px; width:300px;">
+
+Do not fear mistakes. Retrace your steps and seek the heart of the sound.
+
+[[Try Again| Sound1]]
+
+
+
+:: Fail2.2 {"position":"1900,1400","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+Unfortunately this is not the right instrument, try again.
+
+[[Try again->Sound2]]
+</div>
+
+
+:: Fail2.3 {"position":"1900,1550","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+
+Almost! Try again.
+
+[[Try again->Sound3]]
+</div>
+
+
+:: Fail2.4 {"position":"1900,1700","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+
+Unfortunately this is not the right instrument, try again.
+
+[[Try again->Sound4]]
+</div>
+
+
+:: Fail2.5 {"position":"1900,1850","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+
+Almost! Try again.
+
+[[Try again->Sound5]]
+</div>
+
+
+:: Fail3 {"position":"3475,1450","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+
+Unfortunately, the melody you selected was not the true voice we were seeking. Do not fear, the path is still open.
+
+[[Try again->Orchestra1]]
+</div>
+
+
+:: Fail3.1 {"position":"3625,1825","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+Ah, a subtle deception! That melody, which seemed so alive, was in fact the product of a machine's ingenuity.
+
+[[Try again->Orchestra2]]
+</div>
+
+
+
+:: Fail3.2 {"position":"3725,1950","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+Unfortunately this is not the right sound, try again.
+
+[[Try again->Orchestra3]]
+</div>
+
+
+:: Fail4 {"position":"2875,600","size":"100,100"}
+<div style="text-align:center; margin-top:110px;">
+
+Unfortunately, it's not the right answer. Please try again.
+
+[[Try again->Riddle1]] 
+</div>
+
+
+:: Fail4.1 {"position":"3100,725","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+
+Oh no, it wasn't the right instrument. Please try again.
+
+[[Try again->Riddle2]]
+</div>
+
+
+:: Final {"position":"3575,2075","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+Well done! Your perception is sharp, adventurer. You have recognized the authentic voice of the **clarinet**, and with that, you have reassembled another piece of the harmony.
+
+[[Read more about the clarinet|Clarinet]]
+[[Continue|Reward3]]
+</div>
+
+
+:: Final Home {"position":"3800,1050","size":"100,100"}
+<div style="text-align:center; margin-top:20px;">
+Your choice is noteworthy. 
+Even from a distance, your passion for music has resonated in our halls. Thanks to the tokens you have collected, you have unlocked access to a particular special musical performance.
+
+<div style="margin-top:20px;">
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0BwYhldmZyoCitV5c1SgrR?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<p style="white-space: nowrap;">
+If you enjoyed this kind of music, listen to more from
+<a href="https://open.spotify.com/artist/36vQg5P58v8zgqr3hj2rDo" target="_blank"
+   style="color:#800020; text-decoration:none;">
+ANTICA CONSONANZA
+</a> on Spotify 🎵.
+</p>
+
+
+</div>
+
+[[Continue->Social]]
+</div>
+
+
+:: Final Museum {"position":"3525,1050","size":"100,100"}
+<div style="text-align:center; margin-top:20px;">
+<div style="display:flex; align-items:center;">
+
+  <div style="flex:1; padding-right:20px;">
+    Thanks to the tokens you have collected, you have unlocked access to a unique item.  
+    Go to the information desk to get your gadget, a tangible memento of your endeavor.
+  </div>
+
+  <div>
+    <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/gadget.png" 
+         alt="A museum gadget." 
+         style="width:350px;">
+  </div>
+
+</div>
+
+[[Continue->Social]]
+</div>
+
+
+
+:: Final Souvenir {"position":"3650,925","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+$name, your quest has come to an end. You have collected every token, and with them, you have gained the power to unlock the final reward. 
+There is a last choice to be made,but first are you in the museum or not?
+
+
+[[I am in the museum|Final Museum]]
+[[I am not in the museum|Final Home]]
+</div>
+
+
+:: Harp {"position":"1750,350","size":"100,100"}
+
+<div style="display:flex; align-items:flex-start;">
+  <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/harp.jpg" 
+       alt="harp badge"
+       style="width:300px; margin-right:20px;"/>
+
+  <div>
+    <p>
+      Its music is a refuge of calm and reflection, creating delicate harmonies that touch the soul.
+      The harp represents a deep and intuitive personality, one who finds strength in grace and tranquility.
+    </p>
+
+    [[Continue-> Detective BadgeHarp]]
+  </div>
+</div>
+
+
+
+
+:: Image2 {"position":"2475,1300","size":"100,100"}
+  
+<p style="margin-bottom:20px;">Select the real image</p>
+
+<div style="display:flex; justify-content:space-around; gap:20px;">
+     [[<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/lute.jpg" style="width: 450px; transform:rotate(-90deg); margin-top:110px;"/>|Success1]]
+    [[<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/lute_ai.png"
+           style="width:450px;"/>|Fail1]]
+</div>
+
+
+
+:: Immersive room {"position":"575,350","size":"100,100"}
+<p>
+    On the threshold of the room, the lights dim and the door closes silently behind you. You are enveloped in a twilight, but a cascade of images comes to life on the walls.
+</p>
+
+<p>
+   <em>(A voice-over begins to speak)</em>
+    <audio controls autoplay>
+        <source src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/Introduction-%20rhapsody.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</p>
+<p>
+    As the narrator speaks, the walls come to life with a rapid sequence of projections: details of antique violins, portraits of composers like Padre Martini, and yellowed pages of rare scores. It feels like you are at the center of a virtual gallery.
+</p>
+
+[[Continue  -> Immersive room 1]]
+
+
+
+:: Immersive room 2 {"position":"875,350","size":"100,100"}
+<p>
+    <em>(The interference disappears, replaced by a clean, authentic sound)</em>
+    Listen carefully. Look with a critical eye. Not everything that seems authentic truly is. 
+
+    The chaos ceases instantly. All projections turn off, leaving only a glowing arrow projected on the floor that points toward a door. The mission has just begun.
+</p>
+
+[[Follow the arrow ➡︎ ->Instructions room]]
+
+
+:: Instructions room {"position":"875,475","size":"100,100"}
+<p>
+    The museum is hiding its secrets, and your tool for this investigation is the museum's <em>app</em>.
+</p>
+<p>
+    During your visit, you will be provided with headphones and will find <b>QR codes</b> placed in specific locations. By scanning them with your phones, you will access the activities within the app. 
+</p>
+<p>
+   If you all prefer not to use your own phones, don't worry. You will find dedicated tablets in some of the rooms that offer different activities. Additionally, you can continue your investigation at any time by downloading the museum's <em>app</em>, which will allow you to complete its unique activities at home, or wherever you like.
+</p>
+
+<center>
+    <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/QRcode.jpg" width="250px" alt="QR Code to scan">
+</center>
+[[Proceed ->Room 1]]
+
+
+:: Mandolin {"position":"2050,350","size":"100,100"}
+<div style="display:flex; align-items:flex-start;">
+  <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/mandolin.png"
+       alt="Mandolin badge"
+       style="width:500px; margin-right:20px;"/>
+
+  <div style="display:flex; flex-direction:column;">
+    <div>
+      Portable and versatile, the mandolin is the instrument of free thinkers,
+      always ready for new adventures and unexpected melodies.
+      Its lively and unique sound tells tales of travel and discovery,
+      mirroring a soul that follows its own rhythm.
+    </div>
+
+    <p>
+      [[Continue-> Detective BadgeMandolin]]
+    </p>
+  </div>
+</div>
+
+
+
+:: Oboe {"position":"3450,1950","size":"100,100"}
+<div style="text-align:center; margin-top:50px;">
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/oboe.png"
+     style="float:right; margin-left:15px; width:250px;">
+
+The oboe, which evolved from a medieval instrument called the shawm in 17th-century France, is a woodwind instrument.
+It is distinguished by its use of a double reed and for its unique, clear, and penetrating timbre.
+It is known for its great expressiveness and is often the instrument that tunes the entire orchestra.
+
+[[Continue->Orchestra3]]
+</div>
+
+
+
+:: Orchestra1 {"position":"3325,1450","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+Listen carefully. Which of these two sounds hides its true, authentic voice?
+
+<audio controls><source src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/real_theorbe.m4a" type="audio/wav"></audio>
+
+[[This is the real sound|Success3]]
+
+<br>
+
+<audio controls><source src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/fakesound1.wav" type="audio/wav"></audio>
+
+
+[[This is the real sound|Fail3]]
+</div>
+
+
+
+:: Orchestra2 {"position":"3450,1700","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+The next pair of sounds is the following: 
+
+<audio controls><source src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/AI%20orchestra.wav" type="audio/wav"></audio>
+
+[[This is the real sound|Fail3.1]]
+
+<br>
+
+<audio controls><source src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/real_oboe.wav" type="audio/wav"></audio>
+
+
+[[This is the real sound|Success3.1]]
+</div>
+
+
+
+:: Orchestra3 {"position":"3575,1950","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+This is the last pair of sounds, you're almost there.
+
+<audio controls><source src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/fakesound2.wav" type="audio/wav"></audio>
+
+[[This is the real sound|Fail3.2]]
+
+<br>
+
+<audio controls><source src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/real_clarinet.wav" type="audio/wav"></audio>
+
+
+[[This is the real sound|Final]]
+</div>
+
+
+
+
+
+:: Question1 {"position":"600,725","size":"100,100"}
+<!-- DEBUG: A:$A B:$B C:$C -->
+
+<div style="text-align:center;">
+  When faced with a challenge, do you...
+</div>
+
+<div style="margin-top:15px; text-align:left;">
+(link: "a) act right away, loud and clear ⚡")[
+  (set: $A to $A + 1)
+  (goto: "Question2")
+]
+
+(link: "b) reflect before acting 💭")[
+  (set: $B to $B + 1)
+  (goto: "Question2")
+]
+
+(link: "c) follow your own rhythm, no matter what others think 🎵")[
+  (set: $C to $C + 1)
+  (goto: "Question2")
+]
+</div>
+
+
+
+:: Question2 {"position":"600,850","size":"100,100"}
+<!-- DEBUG: A:$A B:$B C:$C -->
+
+<div style="text-align:center;">
+  Your ideal weekend would be...
+</div>
+
+<div style="margin-top:15px; text-align:left;">
+(link: "a) performing in front of a crowd 🎤")[
+  (set: $A to $A + 1)
+  (goto: " Question3")
+]
+
+(link: "b) writing, reading, or crafting quietly 📚")[
+  (set: $B to $B + 1)
+  (goto: " Question3")
+]
+
+(link: "c) traveling to an unexpected place 🌍")[
+  (set: $C to $C + 1)
+  (goto: " Question3")
+]
+</div>
+
+
+
+:: Reward1 {"position":"2475,1975","size":"100,100"}
+<div class="side-by-side">
+
+  
+  <div style="text-align:center;">
+    <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20success%202.png"
+         style="width:350px; margin-bottom:10px;">
+    <br>
+    <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/token.png"
+         style="width:150px;">
+  </div>
+
+
+  <div class="text-column">
+    Congratulations! You've successfully completed this trial. Your ability to distinguish reality is exceptional.
+
+    (set: $gettoni to it + 1)
+    (set: $test1_completed to true)
+
+    $name, you have obtained a Token. Guard it carefully, because it will be needed to unlock the reward at the end of the journey.
+
+    Now that you have overcome this challenge, you can go back and face the others.
+
+    [[Return to the trials menu| choice1]]  
+    [[Return to the main menu|Choice]]
+  </div>
+
+</div>
+
+
+
+
+
+:: Reward2 {"position":"2050,2000","size":"100,100"}
+
+<div style="float:left; margin-right:10px; width:350px; text-align:center;">
+  <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20success%202.png"
+       style="width:350px; display:block; margin-bottom:10px;">
+  <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/token.png"
+       style="width:200px; display:block; margin-left:auto; margin-right:auto;">
+</div>
+
+Well done! Your senses are sharp, adventurer. You have proven your skill and, with that, you obtain a new token.
+
+(set: $gettoni to it + 1)
+(set: $test2_completed to true)
+
+Guard this token with care so you will be able to unlock the reward that awaits you at the end of the journey.
+
+[[Return to the trials menu| choice1]]  
+[[Return to the main menu|Choice]]
+
+
+
+:: Reward3 {"position":"3700,2200","size":"100,100"}
+<div style="margin-top:30px;">
+  <div style="float:left; margin-right:15px; width:350px; text-align:center; margin-top:-130px;">
+    <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20success%202.png"
+         style="width:350px; display:block; margin-bottom:10px;">
+    <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/token.png"
+         style="width:200px; display:block; margin-left:auto; margin-right:auto;">
+  </div>
+
+  Your insight has guided you to the end of this mission. As a reward, you obtain a token. Guard this symbol carefully, for only when all the tokens have been collected will the final doors open.
+
+  (set: $gettoni to it + 1)
+  (set: $test3_completed to true)
+
+  [[Return to the trials menu| choice1]]  
+  [[Return to the main menu|Choice]]
+</div>
+
+
+
+:: Reward4 {"position":"3075,1000","size":"100,100"}
+<div style="margin-top:30px;">
+  <div style="float:left; margin-right:10px; width:350px; text-align:center; margin-top:-130px;">
+  <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20success%202.png"
+       style="width:350px; display:block; margin-bottom:10px;">
+  <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/token.png"
+       style="width:200px; display:block; margin-left:auto; margin-right:auto;">
+</div>
+
+Well done, $name! Your insight is remarkable. You have proven your wisdom and, with that, you obtain a new token."
+
+(set: $gettoni to it + 1)
+(set: $test4_completed to true)
+
+Guard this token with care so you will be able to unlock the reward that awaits you at the end of the journey.
+
+[[Return to the trials menu| choice1]]  
+[[Return to the main menu|Choice]]
+
+
+
+:: Riddle1 {"position":"2700,575","size":"100,100"}
+<div style="text-align:center; margin-top:20px;">
+
+So, the first riddle to solve is the following:
+
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/riddle1.png" width="500">
+
+Which instrument is described?
+
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/buccin.jpg" width="200">
+[[The buccin|Success4]]
+
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/clarinet.jpg" width="200">
+[[The clarinet|Fail4]]
+
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/flute.jpg" width="200">
+[[The flute|Fail4]]
+</div>
+
+
+:: Riddle2 {"position":"2900,725","size":"100,100"}
+<div style="text-align:center; margin-top:20px;">
+
+The other riddle is:
+
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/riddle2.png" width="500">
+
+Which instrument is described?
+
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/clarinet.jpg" width="200">
+[[The clarinet|Fail4.1]]
+
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/hecklofono.jpg" width="200">
+[[The Heckelphone|Success4.1]]
+
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/flute.jpg" width="200">
+[[The flute|Fail4.1]]
+
+</div>
+
+
+
+:: Room 1 {"position":"725,475","size":"100,100"}
+<div style="text-align:center; margin-top:50px;">
+<p align="center">As soon as you enter the first room you hear a melodious and reassuring voice echoing from your headphones. 
+It's <b>Bard</b>, a minstrel from another era, who introduces himself as your guide on this journey through time.</p>
+
+[[Continue listening->Bard introduction]]
+</div>
+
+
+:: Social {"position":"3650,1200","size":"100,100"}
+<div style="text-align:center; margin-top:20px;">
+$name, your adventure in the heart of music is about to conclude. Before we say goodbye, if you wish, we invite you to leave a mark of your passage. If you enjoyed the experience, feel free to leave a review or share your photos on social media.
+
+Tag the museum and use the official hashtag on Instagram and Facebook to make your story resonate. You'll help us let many other adventurers discover the magic of music.
+
+Thank you for visiting our halls. Your mission concludes here.
+
+<p style="text-align:center; margin-top:2px;">
+  <a href="https://www.facebook.com/museomusicabologna" target="_blank"
+     style="display:inline !important; text-decoration:none; color:#3b5998; font-weight:bold;">
+    📘 Facebook
+  </a>
+  &nbsp;|&nbsp;
+  <a href="https://www.instagram.com/museomusica/" target="_blank"
+     style="display:inline !important; text-decoration:none; color:#C13584; font-weight:bold;">
+    📸 Instagram
+  </a>
+  <br>
+  [[End of the experience|End]]
+</p>
+</div>
+
+
+
+:: Sound2 {"position":"2050,1400","size":"100,100"}
+<div style="margin-top:3px; text-align:center;">
+
+   <p>The second audio is the seguent:</p>
+
+<audio src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/medieval%20lute.mp3" controls></audio>
+
+ <p>What instrument is playing?</p>
+
+[[The guitar|Fail2.2]]
+[[The harpsichord|Fail2.2]]
+[[The lute|Sound3]]
+
+
+:: Sound3 {"position":"2050,1550","size":"100,100"}
+<div style="margin-top:3px; text-align:center;">
+
+  <p>The next audio is:</p>
+
+<audio src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/flute.wav" controls></audio>
+
+ <p>What instrument is playing?</p>
+
+[[The bassoon|Fail2.3]]
+[[The flute|Sound4]]
+[[The oboe|Fail2.3]]
+
+
+:: Sound4 {"position":"2050,1700","size":"100,100"}
+<div style="margin-top:3px; text-align:center;">
+
+  <p>This is the next instrument to reveal:</p>
+
+<audio src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/harpsichord.wav" controls></audio>
+
+ <p>What instrument is playing?</p>
+
+[[The harpsichord|Sound5]]
+[[The spinet|Fail2.4]]
+[[The harp|Fail2.4]]
+
+
+:: Sound5 {"position":"2050,1850","size":"100,100"}
+<div style="margin-top:3px; text-align:center;">
+
+<p>Here we are at the final melody. Listen carefully, because this is the last instrument you will have to reveal.</p>
+
+<audio src="https://raw.githubusercontent.com/3Graces/Twine/main/audio/viola.wav" controls></audio>
+
+
+ <p>What instrument is playing?</p>
+
+[[The viola|Reward2]]
+[[The cello|Fail2.5]]
+[[The harp|Fail2.5]]
+
+
+
+:: Start 0 {"position":"400,475","size":"100,100"}
+</style>
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20talking.jpg"
+     style="float:right; margin-left:20px; width:350px;">
+<p align="center">Long ago, when minstrels travelled from town to town, it was easy to know if music came from a real human heart or from clumsy tricks. 
+But now, in this curious age of quick lights and hidden wires, it is hard to tell: was the song made by a living soul, or by a clever machine with artificial thought?</p>
+
+<p align="center">[[continue the story...->Start 1]]</p>
+
+
+:: Start 1 {"position":"400,600","size":"100,100"}
+</style>
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20talking.jpg"
+     style="float:right; margin-left:20px; width:350px;">
+<p align="center">Just last night, I played in the Hall of a Thousand Notes. Suddenly, a melody so sweet and sorrowful even silenced the drums. I wondered where it came from. Some said it was created by a poet, others swore it was born from the Great Mind of Metal, which needs no rest or food.</p>
+
+<p align="center">We all stood there, not knowing what was true. In that moment, I understood that it doesn't matter where a melody comes from, but what emotions it stirs in the heart.</p>
+
+[[My solution...->Start 2]]
+
+
+:: Start 2 {"position":"575,600","size":"100,100"}
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/bard%20talking.jpg"
+     style="float:right; margin-left:20px; width:350px;">
+<p align="center">In my time, history is an enigma, a tale where truth blends with fiction. Every day, it becomes harder to distinguish what truly happened from what was invented.
+
+But you, traveler, are here to bring back the light. You will take on the role of a Detective to uncover what is authentic, following every clue and solving the mysteries left by time. Each proof you solve will bring you closer to rebuilding the true story and protecting it from oblivion.</p>
+
+[[I'm ready, let's begin the investigation! -> Mission Start]]
+
+
+:: Story Init [startup] {"position":"1450,1425","size":"100,100"}
+(set: $gettoni to 0)
+(set: $test1_completed to false)
+(set: $test2_completed to false)
+(set: $test3_completed to false)
+(set: $test4_completed to false)
+
+
+:: Success {"position":"2500,1150","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+
+Exactly! You selected the right image
+</p>
+
+[[Continue->Image2]]
+</div>
+
+
+:: Success1 {"position":"2475,1450","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+
+Exactly! 
+
+The lute is a plucked string instrument, recognizable for its characteristic pear-shaped soundbox. It had enormous popularity during the Renaissance and Baroque periods and is considered one of the ancestors of the modern guitar.
+
+[[Continue-> Image3]]
+</div>
+
+
+:: Success1.1 {"position":"2475,1775","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+
+Exactly! 
+
+The buccin is an ancient Roman wind instrument, used primarily for giving signals in the army. It was initially an adapted shell but maintained an elongated, curved shape. It was played by "buccinatores" and, although larger than the cornu, was sometimes confused with it.
+
+This is the end, continue to get the reward!
+
+[[Continue->Reward1]]
+</div>
+
+
+:: Success3 {"position":"3325,1575","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+Well done! 
+You have recognized the authentic voice of the **theorbo**.
+
+[[Read more about the theorbo->Theorbo]]
+[[Continue->Orchestra2]]
+</div>
+
+
+:: Success3.1 {"position":"3450,1825","size":"100,100"}
+<div style="text-align:center; margin-top:100px;">
+Your intuition is exceptional, adventurer. You have discerned the true voice of the **oboe**, and another shard of the harmony has been recovered.
+[[Read more about oboe->Oboe]]
+[[Continue->Orchestra3]]
+</div>
+
+
+:: Success4 {"position":"2700,725","size":"100,100"}
+<div style="text-align:center; margin-top:80px;">
+
+Well done!
+
+Over time, the buccin evolved to become one of the ancestors of the modern instrument known as the trombone.
+Its bell was often sculpted in the shape of a dragon or snake's head, a detail that added to its imposing appearance.
+
+[[Continue->Riddle2]]
+</div>
+
+
+:: Success4.1 {"position":"3075,850","size":"100,100"}
+<div style="text-align:center; margin-top:60px;">
+
+Exactly! 
+
+The Heckelphone is a double-reed woodwind instrument, belonging to the oboe family, but with a sound that is an octave lower than the common oboe.
+
+It was created by Wilhelm Heckel in 1904, following a request from Richard Wagner, who wanted an instrument with a deep and penetrating timbre for his operas.
+
+Continue to get the reward
+
+[[Continue->Reward4]]
+</div>
+
+
+:: Tambourine {"position":"1275,375","size":"100,100"}
+<div style="text-align:center; margin-top:30px;">
+<div style="display:flex; align-items:flex-start;">
+  <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/tambourine.png" 
+       alt="Tambourine badge"
+       style="width:400px; margin-right:20px;"/>
+
+  <p>
+    Like a tambourine, you blend rhythm and melody:
+    you bring energy when it’s needed, yet you also support with quiet grace.
+    You’re the one who keeps the beat so everyone can play in harmony.
+  </p>
+</div>
+
+[[Continue-> Detective BadgeTambourine]]
+</div>
+
+
+
+:: Theorbo {"position":"3225,1700","size":"100,100"}
+<div style="text-align:center; margin-top:50px;">
+<img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/theorbe.png"
+     style="float:right; margin-left:15px; width:300px;">
+
+The theorbo, developed in the late 16th century, is a plucked string instrument belonging to the lute family.
+It is distinguished by its very long extended neck, which supports a series of un-fretted bass strings,
+giving it a deep and resonant sound. It was particularly popular during the Baroque period,
+where it was often used for accompaniment.
+
+[[Continue->Orchestra2]]
+</div>
+
+
+
+:: Violin {"position":"1250,1075","size":"100,100"}
+<div style="display:flex; align-items:flex-start;">
+ 
+  <img src="https://raw.githubusercontent.com/3Graces/Twine/main/img/violin.png"
+       alt="Violin badge"
+       style="width:400px; margin-right:20px;"/>
+
+
+  <div style="display:flex; flex-direction:column;">
+    <div>
+      Like a solo violin that stands out in an orchestra, you are a person who
+      boldly takes on challenges and loves to perform in front of a crowd.
+      Your melody is bright, direct, and designed to get noticed.
+    </div>
+
+    <p>
+      [[Continue-> Detective BadgeViolin]]
+    </p>
+  </div>
+</div>
+
+
+
+:: StoryStylesheet [stylesheet]
+/* ====== Sfondo e testo ====== */
+tw-story {
+  background-color: #d6babf !important;
+  color: black !important;
+  /* rimuove solo margine/padding superiore */
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* ====== Font ====== */
+tw-story,
+tw-passage,
+tw-passage * {
+  font-family: "Garamond", "Adobe Garamond Pro", "EB Garamond",
+               "Apple Garamond", "Times New Roman", serif !important;
+}
+
+/* ====== Link ====== */
+tw-link {
+  color: black !important;
+}
+tw-link:hover {
+  color: #415739 !important;   /* colore al passaggio del mouse */
+}
+
+/* ====== Margine/Padding interni del passaggio ====== */
+tw-passage {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* rimuove margine/padding solo del primo elemento del passaggio */
+tw-passage > *:first-child {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+.side-by-side {
+  display: flex;          /* affianca immagine e testo */
+  align-items: flex-start; /* allinea in alto */
+  gap: 15px;               /* spazio tra immagine e testo */
+}
+.side-by-side img {
+  width: 200px;            /* dimensione immagine, modifica a piacere */
+}
+.text-column {
+  display: flex;
+  flex-direction: column;  /* testo in colonna */
+}
+.bottom-right {
+  align-self: flex-end;    /* spinge l’immagine a destra in basso */
+  margin-top: 10px;        /* spazio sopra l’immagine */
+  width: 150px;            /* dimensione immagine aggiuntiva */
+}
+.passage {
+    padding-top:40px;
+}
+
